@@ -17,4 +17,10 @@ $(function() {
       $('#ressys-frame').toggle(true);
     }
   });
+
+  window.addEventListener('message', function (e) {
+    if (e.origin == $('#ressys-frame').data('src')) {
+      document.getElementById('ressys-frame').style.height = e.data + 'px';
+    }
+  }, false);
 });
