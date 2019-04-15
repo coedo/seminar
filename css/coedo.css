@@ -7,6 +7,10 @@ header .intro-text .intro-heading {
 	text-transform: none;
 }
 
+#portfolio .portfolio-item .portfolio-caption p, section h3.section-subheading {
+	font-style: normal;
+}
+
 @media (min-width: 768px) {
   header .intro-text .intro-heading {
 		font-size: 50px;
